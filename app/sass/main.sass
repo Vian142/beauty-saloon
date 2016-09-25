@@ -1,0 +1,383 @@
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "RobotoRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+h1
+	color: red
+	font-size: 50px
+
+
+/* header */
+
+$color-blue: #3DBCE2
+$color-pink: #FE386A
+$color-dark: #303030
+
+
+h2
+	font-size: 3em
+	font-family: 'Open Sans'
+	color: $color-dark
+	text-transform: uppercase
+	font-weight: 400
+	line-height: 1em
+	text-align: center
+p
+	font-size: 1.2em
+	font-family: 'Roboto'
+	color: $color-dark
+	line-height: 1.5em
+
+.wrap-content
+	p
+		text-align: center
+
+section
+	padding: 100px 0
+	max-width: 1920px
+	margin: 0 auto
+
+
+/* временно */
+.bg-block-1,
+.bg-block-2,
+.bg-block-3,
+.bg-block-4
+	position: relative
+	min-height: 750px
+	padding: 100px 0 100px 0
+	background-size: cover
+	color: #ffffff
+	text-shadow: 1px 1px 0 rgba(0,0,0, 0.8)
+	p
+		color: #ffffff
+	h2
+		color: #ffffff
+	h3
+		color: #ffffff
+	.img-content-block
+		border-color: #ffffff
+.bg-block-1
+	background-image: url("../img/background/background-1.jpg")
+.bg-block-2
+	background-image: url("../img/background/background-2.jpg")
+.bg-block-3
+	background-image: url("../img/background/background-3.jpg")
+.bg-block-4
+	background-image: url("../img/background/background-4.jpg")
+
+
+.top-header
+	position: relative
+	background: $color-blue
+
+.logo-container
+	.logo-img
+		display: block
+		margin: 15px auto
+	.title-logo
+		font-size: 28px
+		font-family: "Roboto"
+		color: #ffffff
+		margin: 10px 0 0px 0
+		text-align: center
+		text-transform: uppercase
+		font-weight: 600
+		text-shadow: 2px 2px 0 rgba(0,0,0, 0.4)
+	.descr-logo
+		font-family: 'Open Sans'
+		font-size: 24px
+		color: $color-dark
+		text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6)
+		font-weight: 400
+		text-transform: uppercase
+		text-align: center
+		margin: 3px 0 5px 0
+
+/* Меню */
+.navigation
+	position: fixed
+	height: 100%
+	width: 0
+	max-width: 360
+	margin: 0
+	overflow: hidden
+	padding: 50px 0 0 0 
+	background: $color-blue
+	box-shadow: 0 0 2px 4px rgba(0,0,0, 0.2)
+	z-index: 160
+	li
+		display: block
+		text-align: center
+		padding: 5px 0
+		width: 100%
+		a
+			font-family: 'Open Sans'
+			font-size: 1.6em
+			font-weight: 600
+			height: 60px
+			line-height: 60px
+			text-transform: uppercase
+			display: block
+			color: #ffffff
+			transition: 0.2s ease all
+			&:hover
+				background: $color-pink
+				text-decoration: none
+
+a.menu-trigger
+	position: fixed
+	width: 50px
+	height: 50px
+	right: 25px
+	top: 10px
+	font-size: 32px
+	text-align: center
+	line-height: 50px
+	background: #000
+	border-radius: 4px
+	color: $color-blue
+	z-index: 170
+
+a.menu-trigger.active
+		color: $color-pink
+
+
+
+/* Колонки в шапке */
+.header-columns
+	padding: 10px 0
+	.column-block
+		display: inline-block
+		vertical-align: top
+		padding: 10px 20px
+		h4
+			margin: 0
+			font-family: 'Open Sans'
+			font-size: 1.5em
+			line-height: 1.3em
+			font-weight: 300
+			color: $color-dark
+			text-transform: uppercase
+	.header-link
+		color: $color-pink
+		a
+			border-bottom: 2px dotted $color-pink
+			color: $color-pink
+			&:hover
+				text-decoration: none
+				border-bottom: none
+		i
+			margin-right: 5px
+.link-btn
+	display: block
+	width: 260px
+	font-family: 'Roboto'
+	font-size: 1em
+	line-height: 1.5em
+	text-transform: uppercase
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+	text-align: center
+	padding: 15px 15px
+	color: #ffffff
+	background: $color-pink
+	border-radius: 8px
+	box-shadow: 1px 1px 0 0 rgba(0,0,0, 0.4)
+	&:hover
+		text-decoration: none
+		color: #ffffff
+		box-shadow: inset 0px 0px 10px 8px rgba(0,0,0, 0.05)
+
+
+/* Слайдер */
+.slider
+	display: block
+	position: relative
+	padding: 0
+	z-index: 70
+
+.slide
+
+
+.img-slide
+	img
+		filter: brightness(70%)
+
+.slide-content
+	position: absolute
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	padding: 70px 40px
+	h3
+		font-family: 'Open Sans'
+		font-size: 4em
+		font-weight: 600
+		text-transform: uppercase
+		color: #ffffff
+		margin: 5px 0
+		letter-spacing: 4px
+		text-align: center
+	p
+		font-family: 'Roboto'
+		color: #ffffff
+		max-width: 750px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		font-size: 1.6em
+		line-height: 1.3em
+		font-weight: 400
+		letter-spacing: 2px
+
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4,
+.slide-5
+	width: 100%
+	background-size: cover
+	background-repeat: none 
+
+
+
+/* Блок с косыми границами */
+.white-block
+	position: relative
+	padding: 15px 0 25px 0
+	&::after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 125px
+		background-image: url(../img/bottom-section.png)
+		background-size: 100% 100%
+		bottom: -124px
+		z-index: 150
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 125px
+		background-image: url(../img/top-section.png)
+		background-size: 100% 100%
+		top: -124px
+		z-index: 150
+	.img-content-block
+		border-color: #e3e0e0
+
+
+/* Колонки иконок */
+.column
+	max-width: 200px
+	margin: 0	auto
+	text-align: center
+	.icon-column
+		margin: 0 auto
+		display: block
+		width: 120px
+		height: 120px
+		background: $color-blue
+		border: 4px solid #adebf6
+		border-radius: 50%
+
+
+/* Скругленные изображения */
+.img-content-block
+	width: 300px
+	height: 300px
+	margin: 0 auto
+	border-width: 9px
+	border-style: solid
+	border-radius: 50%
+	overflow: hidden
+	img
+		max-width: 100%
+
+/* Список журналов */
+.list-magazine
+	text-align: center
+	padding: 0
+	margin-top: 3%
+	li
+		display: inline-block
+		width: 240px
+		border: 5px solid #cdf9ff
+		margin: 20px
+		img
+			max-width: 100%
+
+/* Карта */
+.map
+	padding: 0
+	#myMap
+		height: 700px
+		width: 100%
+
+span.title-map
+	text-align: center
+	font-family: 'Roboto'
+	font-size: 1em
+	color: $color-pink
+span.adress-map
+span.phone-map
+	font-weight: bold
+
+
+/* Подвал сайта */
+footer
+	display: block
+	position: relative
+	padding: 5px 15px
+	min-height: 50px
+	background: $color-dark
+	text-align: center
+	.copyright
+		p
+			color: #ffffff
+			a
+				color: $color-blue
+	.bottom-footer
+		p
+			color: #ffffff
